@@ -1,0 +1,44 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #211294;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #211294;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Estilos para los bloques de carreras */
+.carrera {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.carrera h2 {
+  margin-top: 0;
+}
+
+.carrera p {
+  margin: 0;
+}
+
+/* Estilos para los formularios de inscripción (puedes agregar más estilos) */
+.formulario {
+  margin-top: 1rem;
+}
