@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -8,8 +8,17 @@ body {
 header {
   background-color: #211294;
   color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(222, 244, 252);
+  font-size: 20px;
   text-align: center;
   padding: 2rem;
+}
+/* Estilos para el logo en el encabezado */
+header img {
+  width: 800px; 
+  height: auto; 
+  margin-right: 10px; /* Espacio entre el logo y el título */
+  border-radius: 8px;
 }
 
 main {
@@ -22,23 +31,74 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+footer img {
+  width: 70px; /* Ajusta el ancho de la imagen según tus preferencias */
+  height: auto; /* Esto mantiene la proporción de aspecto original */
+  margin: 5px; /* Agrega margen alrededor de la imagen */
+  text-align: right;
+  border-radius: 8px;
 
+}
 /* Estilos para los bloques de carreras */
 .carrera {
+  background-color: #211294;
   border: 1px solid #ddd;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  display: flex; /* Usa el modelo de caja flexible para alinear elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 5px; /* Espacio entre cada bloque de carrera */
+  color: white;
+  border-radius: 8px;
+}
+.carrera .imagenPequena {
+  width: 400; /* Ajusta el ancho de la imagen pequeña según tus preferencias */
+  height: auto; /* Esto mantiene la proporción de aspecto original */
+  margin-right: 5px; /* Espacio entre la imagen y el contenido de la carrera */
+}
+.carrera .contenido {
+  flex: 1; 
+}/* Ocupa el espacio restante disponible en el contenedor */
+
+/* Estilos para el título de la carrera */
+.titulo {
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: justify left;
+  color: #ddd;
+  font-size: 18px;
 }
 
-.carrera h2 {
+/* Estilos para el párrafo de descripción de la carrera */
+.descripcion {
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: justify right;
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* Estilos para los enlaces "Resolución" y "Inscribirse" */
+.resolucion {
+  display: inline-block; /* Alinea los enlaces en línea */
+  margin-right: 5px; /* Espacio entre los enlaces */
+  margin-left: 5px;
+  border-radius: 12px;
+  color:#211294;
+  
+}
+
+.formulario {
+  display: inline-block; /* Alinea los enlaces en línea */
+  margin-right: 5px; /* Espacio entre los enlaces */
+  margin-left: 5px;
+  border-radius: 12px;
+  color:#211294;
+}
+/*.carrera h2 {
   margin-top: 0;
 }
 
 .carrera p {
   margin: 0;
-}
-
-/* Estilos para los formularios de inscripción (puedes agregar más estilos) */
-.formulario {
-  margin-top: 1rem;
 }
