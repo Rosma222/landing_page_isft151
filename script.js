@@ -98,6 +98,18 @@ const carreras = [
     carrerasSection.appendChild(carreraBlock);
   });
 }
+// Obtener elementos necesarios del DOM
+const btnMenu = document.querySelector(".btn-menu");
+const menuContenido = document.querySelector(".menu-contenido");
 
-// Llamada para generar los bloques de carreras al cargar la página
-window.addEventListener("load", generarCarreras);
+// Agregar un evento de clic al botón
+btnMenu.addEventListener("click", function() {
+  if (menuContenido.style.display === "block") {
+    menuContenido.style.display = "none";
+  } else {
+    menuContenido.style.display = "block";
+  }
+});
+
+
+window.addEventListener("load", generarCarreras);// Llamada para generar los bloques de carreras al cargar la página
