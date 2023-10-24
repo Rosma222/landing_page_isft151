@@ -1,5 +1,5 @@
 // Datos de las carreras
-const carreras = [
+const carreras = [     //array de objetos carreras
   {
     nombre: "Tecnicatura Superior en Análisis de Sistemas",
     descripcion: "Aprendé a desarrollar software y sistemas informáticos.",
@@ -50,13 +50,13 @@ const carreras = [
   },
 ];
 
-// Función para generar los bloques de carreras en la página
+// Función para generar los bloques de carreras en la pág
   function generarCarreras() {
   const carrerasSection = document.getElementById("carreras");
 
     carreras.forEach(carrera => {
-    const carreraBlock = document.createElement("div");
-    carreraBlock.className = "carrera";
+    const carreraBlock = document.createElement("div"); /// Crea un elemento div p/c carrera
+    carreraBlock.className = "carrera"; //Asigna clase "carrera" al bloque de carrera
 
     const imagenPequena = document.createElement("img");
     imagenPequena.src = carrera.imagenPequena;
@@ -64,7 +64,7 @@ const carreras = [
     imagenPequena.className = "imagenPequena";
 
     const contenido = document.createElement("div");
-    contenido.className = "contenido"; // Agregamos una clase para aplicar estilos
+    contenido.className = "contenido"; // Agrega una clase para aplicar estilos
 
     const titulo = document.createElement("h2");
     titulo.textContent = carrera.nombre;
@@ -84,18 +84,18 @@ const carreras = [
     formulario.href = "#"; // Enlace al formulario de inscripción
     formulario.textContent = "Inscribirse";
     formulario.addEventListener("click", function() {
-    
+    //Aquí iría implementación al formulario
     });
     formulario.className = "formulario";
     
     carreraBlock.appendChild(titulo);
     carreraBlock.appendChild(descripcion);
-    carreraBlock.appendChild(imagenPequena);
+    carreraBlock.appendChild(imagenPequena);          //agrega elementos al bloque
     carreraBlock.appendChild(contenido);
     carreraBlock.appendChild(resolucion);
     carreraBlock.appendChild(formulario);
 
-    carrerasSection.appendChild(carreraBlock);
+    carrerasSection.appendChild(carreraBlock);       //Agrega bloque al contenedor
   });
 }
 // Obtener elementos necesarios del DOM
@@ -104,7 +104,7 @@ const menuContenido = document.querySelector(".menu-contenido");
 
 // Agregar un evento de clic al botón
 btnMenu.addEventListener("click", function() {
-  if (menuContenido.style.display === "block") {
+  if (menuContenido.style.display === "block") {    //esconde o muestra menú
     menuContenido.style.display = "none";
   } else {
     menuContenido.style.display = "block";
@@ -112,4 +112,4 @@ btnMenu.addEventListener("click", function() {
 });
 
 
-window.addEventListener("load", generarCarreras);// Llamada para generar los bloques de carreras al cargar la página
+window.addEventListener("load", generarCarreras); //Llamada para generar los bloques de carreras al cargar la página

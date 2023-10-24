@@ -1,4 +1,4 @@
-/* Estilos generales */
+/*Estilos generales*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -17,7 +17,7 @@ header {
   border-bottom: 1px solid #ddd;
   align-items: center;
   }
-/* Estilos para el logo en el encabezado */
+/*Estilos del logo header*/
 header img {
   width: 800px; 
   height: auto; 
@@ -25,7 +25,7 @@ header img {
   border-radius: 8px;
   
 }
-/* Estilos para el menú desplegable */
+/*Estilos del menú desplegable*/
 .menu-desplegable {
   position: relative;
   display: inline-block;
@@ -68,12 +68,6 @@ header img {
   
 }
 
-/* Estilos para los enlaces "Resolución" y "Inscribirse" */
-.carrera .contenido button {
-  display: inline-block; /* Alinea los botones en línea */
-  margin-right: 10px; /* Espacio entre los botones */
-}
-
 main {
   padding: 1rem;
 }
@@ -85,35 +79,35 @@ footer {
   padding: 1rem;
 }
 footer img {
-  width: 70px; /* Ajusta el ancho de la imagen según tus preferencias */
-  height: auto; /* Esto mantiene la proporción de aspecto original */
-  margin: 5px; /* Agrega margen alrededor de la imagen */
+  width: 70px; /* Ajusta ancho de la imagen*/
+  height: auto; /* Mantiene proporción de aspecto*/
+  margin: 5px; /* Margen alrededor de la imagen */
   text-align: right;
   border-radius: 8px;
 
 }
-/* Estilos para los bloques de carreras */
+/*Estilos bloques de carreras*/
 .carrera {
   background-color: #211294;
   border: 1px solid #ddd;
-  display: flex; /* Usa el modelo de caja flexible para alinear elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+  display: flex; /*Caja flex para alinear elementos*/
+  align-items: center; /*Centra vertical de elementos*/
   margin-left: 2px;
   margin-right: 2px;
-  margin-bottom: 5px; /* Espacio entre cada bloque de carrera */
+  margin-bottom: 5px; /*Espacio entre bloques de carrera*/
   color: white;
   border-radius: 8px;
 }
 .carrera .imagenPequena {
-  width: 400; /* Ajusta el ancho de la imagen pequeña según tus preferencias */
-  height: auto; /* Esto mantiene la proporción de aspecto original */
-  margin-right: 5px; /* Espacio entre la imagen y el contenido de la carrera */
+  width: 400;
+  height: auto; /*proporción de aspecto*/
+  margin-right: 5px; /* Espacio entre imagen y contenido*/
 }
 .carrera .contenido {
-  flex: 1; 
-}/* Ocupa el espacio restante disponible en el contenedor */
+  flex: 1;                /*Ocupa el espacio restante disponible en el contenedor*/
+}
 
-/* Estilos para el título de la carrera */
+/* Estilos para título de carrera */
 .titulo {
   margin-left: 8px;
   margin-right: 8px;
@@ -122,7 +116,7 @@ footer img {
   font-size: 18px;
 }
 
-/* Estilos para el párrafo de descripción de la carrera */
+/* Estilos para descripción de carrera*/
 .descripcion {
   margin-left: 8px;
   margin-right: 8px;
@@ -131,7 +125,7 @@ footer img {
   font-size: 14px;
 }
 
-/* Estilos para los enlaces "Resolución" y "Inscribirse" */
+/* Estilos de enlaces RESOLUCIÓN e INCRIBIRSE*/
 .resolucion {
   display: inline-block; /* Alinea los enlaces en línea */
   margin-right: 5px; /* Espacio entre los enlaces */
